@@ -7,22 +7,22 @@ class Nkpcli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_darwin_amd64.tar.gz"
-      sha256 "d8d922549ec4c1d75a60879b39f1940ce88d0293bae32e2ec9543f94c1fd8713"
+      sha256 "330e8101d4cd0052147821cdf16117c928a942963806457072b64a458b1925f8"
     end
     if Hardware::CPU.intel?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_darwin_amd64.tar.gz"
-      sha256 "d8d922549ec4c1d75a60879b39f1940ce88d0293bae32e2ec9543f94c1fd8713"
+      sha256 "330e8101d4cd0052147821cdf16117c928a942963806457072b64a458b1925f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_linux_amd64.tar.gz"
-      sha256 "7a016cc138fe1dd56e9ba5dcf8819984b82d8b31ab5473e447de70a8223dec71"
+      sha256 "d234bec8a34b6a12818d2a88cb105994faaaaa31b4ad5f7b75b00338c68ae5ae"
     end
     if Hardware::CPU.arm?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_linux_amd64.tar.gz"
-      sha256 "7a016cc138fe1dd56e9ba5dcf8819984b82d8b31ab5473e447de70a8223dec71"
+      sha256 "d234bec8a34b6a12818d2a88cb105994faaaaa31b4ad5f7b75b00338c68ae5ae"
     end
   end
 
