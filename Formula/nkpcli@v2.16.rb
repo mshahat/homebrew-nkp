@@ -1,8 +1,8 @@
-class Nkpcli < Formula
+class NkpcliAT216 < Formula
   desc "The NKP CLI is the command-line tool for Nutanix Kubernetes Platform (NKP)."
   homepage "https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Kubernetes-Platform-v2_16:Nutanix-Kubernetes-Platform-v2_16"
   url "https://portal.nutanix.com/page/documents/details?targetId=Release-Notes-Nutanix-Kubernetes-Platform-v2_16:Release-Notes-Nutanix-Kubernetes-Platform-v2_16"
-  version "v2.17.0"
+  version "v2.16.1"
 
   on_macos do
     if Hardware::CPU.arm?
