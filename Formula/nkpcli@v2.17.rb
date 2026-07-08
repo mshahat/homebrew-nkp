@@ -2,27 +2,27 @@ class Nkpcli < Formula
   desc "The NKP CLI is the command-line tool for Nutanix Kubernetes Platform (NKP)."
   homepage "https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Kubernetes-Platform-v2_16:Nutanix-Kubernetes-Platform-v2_16"
   url "https://portal.nutanix.com/page/documents/details?targetId=Release-Notes-Nutanix-Kubernetes-Platform-v2_16:Release-Notes-Nutanix-Kubernetes-Platform-v2_16"
-  version "v2.18.0"
+  version "v2.17.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_darwin_amd64.tar.gz"
-      sha256 "7bd51dcbe335dfb9756ea54df69650c59b84b2ceba174f38fb24ccbb6215d698"
+      sha256 "e33d58dcae60b2217974eeb62c7b547a93832f18ef36993adfc93d05aa85fefc"
     end
     if Hardware::CPU.intel?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_darwin_amd64.tar.gz"
-      sha256 "7bd51dcbe335dfb9756ea54df69650c59b84b2ceba174f38fb24ccbb6215d698"
+      sha256 "e33d58dcae60b2217974eeb62c7b547a93832f18ef36993adfc93d05aa85fefc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_linux_amd64.tar.gz"
-      sha256 "59c6269552d96f86f8559af9dcae07e15d336e69f8fdb9bfa20cec7324e5dcab"
+      sha256 "0002f54c88af54d085c8a50e9ad3d179717472e1470406f4832e0c09dff9b674"
     end
     if Hardware::CPU.arm?
       url "https://downloads.d2iq.com/dkp/#{version}/nkp_#{version}_linux_amd64.tar.gz"
-      sha256 "59c6269552d96f86f8559af9dcae07e15d336e69f8fdb9bfa20cec7324e5dcab"
+      sha256 "0002f54c88af54d085c8a50e9ad3d179717472e1470406f4832e0c09dff9b674"
     end
   end
 
